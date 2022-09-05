@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 使用构造函数来创建对象
+			//原型可以更好的优化程序,节省空间
+			function Person(name, age) {
+				// 设置对象的属性
+				this.name = name;
+				this.age = age;
+				// 设置对象的方法
+				this.sayName = sayName
+			}
+
+			// 抽取方法为全局函数
+			function sayName() {
+				console.log(this.name);
+			}
+
+			var person1 = new Person("孙悟空", 18);
+			var person2 = new Person("猪八戒", 19);
+			var person3 = new Person("沙和尚", 20);
+
+			person1.sayName();
+			person2.sayName();
+			person3.sayName();
+
+		</script>
+	</body>
+</html>

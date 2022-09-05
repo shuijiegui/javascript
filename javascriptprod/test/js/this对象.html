@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>、
+	<script type="text/javascript">
+		//创建一个全局变量name
+		var name = "全局变量name";
+
+		//创建一个函数
+		function fun() {
+			console.log(this.name);
+		}
+
+		//创建一个对象
+		var obj = {
+			name: "孙悟空",
+			sayName: fun
+		};
+
+		//我们希望调用obj.sayName()时可以输出obj的名字而不是全局变量name的名字
+		obj.sayName();
+
+	</script>
+	</body>
+</html>
